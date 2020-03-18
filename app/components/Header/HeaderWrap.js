@@ -6,7 +6,9 @@ export default styled.div`
   justify-content: space-between;
   align-items: center;
   height: 54px;
-  padding: 0 20px;
   width: 935px;
   margin: 0 auto;
+  .logo {
+    margin-top: 7px;
+  }
 `;

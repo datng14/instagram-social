@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  text-align: center;
+  display: flex;
+  align-items: center;
   .icon {
     width: 22px;
     margin-right: 22px;
@@ -10,6 +11,7 @@ export default styled.div`
       width: 22px;
       height: 22px;
       object-fit: cover;
+      display: inline-block;
     }
   }
 `;

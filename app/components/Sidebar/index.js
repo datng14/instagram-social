@@ -1,13 +1,13 @@
 import React from 'react';
+import { Wrapper } from './SidebarStyles';
+import Profile from './Profile';
+import Story from './Story';
 
-function Sidebar(props) {
-  const page = 1;
-  return (
-    <div>
-      <h2>sidebar</h2>
-      Sidebar content {page}
-    </div>
-  );
-}
+const Sidebar = () => (
+  <Wrapper>
+    <Profile />
+    <Story />
+  </Wrapper>
+);
 
 export default Sidebar;

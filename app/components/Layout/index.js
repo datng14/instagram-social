@@ -6,13 +6,18 @@ import FooterContainer from './FooterContainer';
 import Header from '../Header';
 import Footer from '../Footer';
 import MainContainer from './MainContainer';
+import Sidebar from '../Sidebar';
 
 const Layout = ({ children }) => (
   <LayoutContainer>
     <HeaderContainer>
       <Header {...children.props} />
     </HeaderContainer>
-    <MainContainer>{children}</MainContainer>
+    <MainContainer>
+      {children}
+      <Sidebar />
+    </MainContainer>
+
     <FooterContainer>
       <Footer />
     </FooterContainer>

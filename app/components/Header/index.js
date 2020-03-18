@@ -11,25 +11,32 @@ import AvatarDefault from '../../images/avatar.jpg';
 import HomeIcon from '../../images/icons/home.svg';
 import ExploreIcon from '../../images/icons/explore.svg';
 import HeartIcon from '../../images/icons/heart.svg';
+import Icon from '../Icon';
 
 function Header() {
   return (
     <HeaderWrap>
       <A href="#">
-        <Img src={Logo} alt="SocialApp" />
+        <Img className="logo" src={Logo} alt="SocialApp" />
       </A>
       <Searchbar />
       <NavBar>
         <HeaderLink to="/">
-          <Img className="icon" src={HomeIcon} alt="Home" />
+          <Icon size="22px" className="icon" icon="home" />
         </HeaderLink>
         <HeaderLink to="/explore">
-          <Img className="icon" src={ExploreIcon} alt="Explore" />
+          <Icon size="22px" className="icon" icon="explore" />
         </HeaderLink>
         <HeaderLink to="/activities">
-          <Img className="icon" src={HeartIcon} alt="Heart" />
+          <Icon size="22px" className="icon" icon="heart" />
         </HeaderLink>
-        {/* <Img className="icon-avatar" src={AvatarDefault} alt="Avatar default" /> */}
+        <HeaderLink to="/profile">
+          <Img
+            className="icon-avatar"
+            src={AvatarDefault}
+            alt="Avatar default"
+          />
+        </HeaderLink>
       </NavBar>
     </HeaderWrap>
   );

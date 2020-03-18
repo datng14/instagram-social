@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const PostWrapper = styled.div`
   width: 614px;
+  margin-right: 28px;
 `;
 
 export const ListWrapper = styled.div`
@@ -20,6 +21,7 @@ export const AuthorWrapper = styled.div`
   padding: 16px;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
   .author {
     display: flex;
     align-items: center;
@@ -33,9 +35,6 @@ export const AuthorWrapper = styled.div`
       margin-left: 16px;
       font-size: 14px;
       font-weight: bold;
-    }
-    &-icon {
-      width: 10px;
     }
   }
 `;

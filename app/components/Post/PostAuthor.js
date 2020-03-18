@@ -1,16 +1,17 @@
 import React from 'react';
 import { AuthorWrapper } from './PostStyles';
 import Img from '../Img';
-import AvatarDefault from '../../images/avatar.jpg';
-import MoreIcon from '../../images/icons/more.svg';
+import AvatarDefault from '../../assets/images/avatar.jpg';
+import A from '../A';
+import Icon from '../Icon';
 
 const PostAuthor = () => (
   <AuthorWrapper>
     <div>
       <Img className="author-avatar" alt="Avatar default" src={AvatarDefault} />
-      <span className="author-name">datng14</span>
+      <A className="author-name">datng14</A>
     </div>
-    <Img className="author-icon" alt="more option" src={MoreIcon} />
+    <Icon icon="more" />
   </AuthorWrapper>
 );
 
